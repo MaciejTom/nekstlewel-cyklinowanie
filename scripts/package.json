@@ -1,0 +1,10 @@
+{
+  "name": "zip-to-unique",
+  "version": "1.0.0",
+  "description": "Rozpakuj ZIPy z HTML i stwórz jeden plik z unikalnymi sekcjami",
+  "bin": {
+    "zip-to-unique": "./zip-to-unique.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

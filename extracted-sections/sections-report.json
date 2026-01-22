@@ -1,0 +1,199 @@
+[
+  {
+    "section": "header",
+    "uniqueVariants": 1,
+    "isIdentical": true,
+    "variants": [
+      {
+        "variantNumber": 1,
+        "hash": "e1d6e6b37613",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (4)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (5)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (6)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (7)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (8)"
+        ]
+      }
+    ]
+  },
+  {
+    "section": "hero",
+    "uniqueVariants": 1,
+    "isIdentical": true,
+    "variants": [
+      {
+        "variantNumber": 1,
+        "hash": "feae6c7cadb8",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (4)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (5)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (6)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (7)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (8)"
+        ],
+        "h2": null
+      }
+    ]
+  },
+  {
+    "section": "features",
+    "uniqueVariants": 2,
+    "isIdentical": false,
+    "variants": [
+      {
+        "variantNumber": 1,
+        "hash": "cdbe5669bf7f",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (4)"
+        ],
+        "h2": "Cyklinuję bez kurzu - nie musisz po mnie sprzątać."
+      },
+      {
+        "variantNumber": 2,
+        "hash": "2f009c1f9f08",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (5)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (6)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (7)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (8)"
+        ],
+        "h2": "Cyklinuję bez kurzu — \nnie musisz po mnie sprzątać"
+      }
+    ]
+  },
+  {
+    "section": "philosophy",
+    "uniqueVariants": 1,
+    "isIdentical": true,
+    "variants": [
+      {
+        "variantNumber": 1,
+        "hash": "421c459b98f9",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (4)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (5)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (6)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (7)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (8)"
+        ],
+        "h2": "Dlaczego My?"
+      }
+    ]
+  },
+  {
+    "section": "services",
+    "uniqueVariants": 4,
+    "isIdentical": false,
+    "variants": [
+      {
+        "variantNumber": 1,
+        "hash": "cff812b5d2a8",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (4)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (8)"
+        ],
+        "h2": "Usługi"
+      },
+      {
+        "variantNumber": 2,
+        "hash": "af546eeed4ab",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (5)"
+        ],
+        "h2": "Co mogę zrobić\ndla Twojej podłogi?"
+      },
+      {
+        "variantNumber": 3,
+        "hash": "aab880b1ee49",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (6)"
+        ],
+        "h2": "Co mogę zrobić \ndla Twojej podłogi."
+      },
+      {
+        "variantNumber": 4,
+        "hash": "5280dc1b1a80",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (7)"
+        ],
+        "h2": "Co mogę zrobić dla Twojej podłogi"
+      }
+    ]
+  },
+  {
+    "section": "caseStudies",
+    "uniqueVariants": 1,
+    "isIdentical": true,
+    "variants": [
+      {
+        "variantNumber": 1,
+        "hash": "c26e48f57948",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (4)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (5)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (6)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (7)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (8)"
+        ],
+        "h2": "Case Studies"
+      }
+    ]
+  },
+  {
+    "section": "testimonials",
+    "uniqueVariants": 1,
+    "isIdentical": true,
+    "variants": [
+      {
+        "variantNumber": 1,
+        "hash": "bfbe765eda14",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (4)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (5)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (6)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (7)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (8)"
+        ],
+        "h2": null
+      }
+    ]
+  },
+  {
+    "section": "faq",
+    "uniqueVariants": 1,
+    "isIdentical": true,
+    "variants": [
+      {
+        "variantNumber": 1,
+        "hash": "44f205d4d79e",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (4)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (5)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (6)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (7)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (8)"
+        ],
+        "h2": "FAQ"
+      }
+    ]
+  },
+  {
+    "section": "footer",
+    "uniqueVariants": 1,
+    "isIdentical": true,
+    "variants": [
+      {
+        "variantNumber": 1,
+        "hash": "3584f3791bb2",
+        "sources": [
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (4)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (5)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (6)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (7)",
+          "stitch_pan_piotr_cyklinowanie_bezpy_owe_landing_page (8)"
+        ]
+      }
+    ]
+  }
+]
