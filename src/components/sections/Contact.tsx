@@ -1,101 +1,54 @@
+import { Phone, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Phone, MapPin, Map, Clock, BadgeCheck } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="bg-primary text-primary-foreground py-16 md:py-24">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-              Zadzwoń lub napisz
-            </h2>
-
-            <div className="grid gap-6">
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-primary-foreground/10 rounded-lg shrink-0">
-                  <Phone className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1">Telefon</h3>
-                  <a href="tel:511692325" className="text-primary-foreground/90 hover:text-white transition-colors">
-                    511 692 325
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-primary-foreground/10 rounded-lg shrink-0">
-                  <MapPin className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1">Adres</h3>
-                  <p className="text-primary-foreground/90">
-                    Kielce, ul. Turystyczna
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-primary-foreground/10 rounded-lg shrink-0">
-                  <Map className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1">Zasięg</h3>
-                  <p className="text-primary-foreground/90">
-                    Kielce i okolice (do 50km)
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-primary-foreground/10 rounded-lg shrink-0">
-                  <Clock className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1">Godziny</h3>
-                  <p className="text-primary-foreground/90">
-                    Pon-Pt 7:00-18:00
-                    <br />
-                    Sob 8:00-14:00
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="p-2 bg-primary-foreground/10 rounded-lg shrink-0">
-                  <BadgeCheck className="h-6 w-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1">Wycena</h3>
-                  <p className="text-primary-foreground/90">
-                    Bezpłatna
-                  </p>
-                </div>
-              </div>
+    <section id="contact" className="w-full py-16 md:py-24 bg-primary text-primary-foreground">
+      <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 mx-auto">
+        <div className="space-y-3">
+          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+            Zadzwoń lub napisz
+          </h2>
+          <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">
+            Bezpłatna wycena - wyślij zdjęcie parkietu lub zadzwoń
+          </p>
+        </div>
+        <div className="mx-auto grid max-w-5xl items-start gap-8 py-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
+          <div className="grid gap-2 text-center">
+            <div className="flex items-center justify-center">
+              <Phone className="h-8 w-8 text-primary-foreground" />
             </div>
-          </div>
-
-          <div className="flex flex-col items-center lg:items-end text-center lg:text-right space-y-6">
-            <div className="space-y-2">
-              <h3 className="text-2xl font-bold">Potrzebujesz szybkiej wyceny?</h3>
-              <p className="text-primary-foreground/80 max-w-md">
-                Skontaktuj się ze mną telefonicznie, aby omówić szczegóły Twojego zlecenia. Gwarantuję fachowe doradztwo.
-              </p>
-            </div>
-
-            <Button
-              size="lg"
-              variant="secondary"
-              className="text-lg px-8 py-6 h-auto w-full md:w-auto shadow-lg hover:shadow-xl transition-all"
-              asChild
-            >
-              <a href="tel:511692325">
-                <Phone className="mr-2 h-6 w-6" />
-                Zadzwoń teraz: 511 692 325
+            <h3 className="text-lg font-bold">Telefon</h3>
+            <p className="text-primary-foreground/90">
+              <a href="tel:511692325" className="hover:underline text-xl font-semibold">
+                511 692 325
               </a>
-            </Button>
+            </p>
           </div>
+          <div className="grid gap-2 text-center">
+            <div className="flex items-center justify-center">
+              <MapPin className="h-8 w-8 text-primary-foreground" />
+            </div>
+            <h3 className="text-lg font-bold">Lokalizacja</h3>
+            <p className="text-primary-foreground/90">Kielce, ul. Turystyczna</p>
+            <p className="text-primary-foreground/70 text-sm">Kielce i okolice (do 50km)</p>
+          </div>
+          <div className="grid gap-2 text-center">
+            <div className="flex items-center justify-center">
+              <Clock className="h-8 w-8 text-primary-foreground" />
+            </div>
+            <h3 className="text-lg font-bold">Godziny pracy</h3>
+            <p className="text-primary-foreground/90">Pon - Pt: 7:00 - 18:00</p>
+            <p className="text-primary-foreground/90">Sobota: 8:00 - 14:00</p>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <Button size="lg" variant="secondary" asChild className="text-lg font-semibold px-8 py-6 h-auto shadow-lg hover:shadow-xl transition-all">
+            <a href="tel:511692325">
+              <Phone className="mr-2 h-5 w-5" />
+              Zadzwoń teraz: 511 692 325
+            </a>
+          </Button>
         </div>
       </div>
     </section>

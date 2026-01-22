@@ -1,74 +1,61 @@
 import { Star } from "lucide-react";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const testimonials = [
+const testimonialsData = [
   {
     name: "Marcin Stroński",
-    rating: 5,
-    text: "Świetny specjalista od cyklinowania. Praca wykonana bardzo dokładnie i profesjonalnie. Polecam!",
+    stars: 5,
+    review: "Świetny specjalista od cyklinowania. Praca wykonana bardzo dokładnie i profesjonalnie. Polecam!"
   },
   {
     name: "Adam Łącki",
-    rating: 5,
-    text: "Bardzo dokładnie, podłogi jak nowe. Pan Piotr doradził też w kwestii pielęgnacji. Polecam serdecznie.",
+    stars: 5,
+    review: "Bardzo dokładnie, podłogi jak nowe. Pan Piotr doradził też w kwestii pielęgnacji. Polecam serdecznie."
   },
   {
     name: "Hanna Kozioł",
-    rating: 5,
-    text: "50-letni parkiet odmłodniał o 50 lat. Naprawdę bezpyłowo - nie musiałam sprzątać po remoncie!",
+    stars: 5,
+    review: "50-letni parkiet odmłodniał o 50 lat. Naprawdę bezpyłowo - nie musiałam sprzątać po remoncie!"
   },
   {
     name: "Tomasz Pisiewicz",
-    rating: 5,
-    text: "Wymiana uszkodzonych klepek i cyklinowanie całości. 50-letnia podłoga jak nowa! Terminowo i czysto.",
+    stars: 5,
+    review: "Wymiana uszkodzonych klepek i cyklinowanie całości. 50-letnia podłoga jak nowa! Terminowo i czysto."
   },
   {
     name: "Agnieszka Krężołek",
-    rating: 5,
-    text: "Uratował mi parkiet po poprzedniej firmie, która go zniszczyła. Teraz wygląda pięknie. Dziękuję!",
-  },
+    stars: 5,
+    review: "Uratował mi parkiet po poprzedniej firmie, która go zniszczyła. Teraz wygląda pięknie. Dziękuję!"
+  }
 ];
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="bg-muted py-12 lg:py-24">
-      <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+    <section id="testimonials" className="w-full py-16 md:py-24 bg-muted">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-foreground">
             Co mówią klienci
           </h2>
-          <div className="flex items-center gap-2 text-muted-foreground">
-            <div className="flex text-amber-500">
-              <Star className="size-5 fill-current" />
-              <Star className="size-5 fill-current" />
-              <Star className="size-5 fill-current" />
-              <Star className="size-5 fill-current" />
-              <Star className="size-5 fill-current" />
-            </div>
-            <span className="font-medium">
-              4.9 na podstawie 50 opinii w Google
-            </span>
-          </div>
+          <p className="mt-4 max-w-2xl mx-auto text-muted-foreground md:text-xl">
+            4.9★ na podstawie 50 opinii w Google
+          </p>
         </div>
-
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={index}
-              className="h-full bg-card border-border/50 shadow-sm hover:shadow-md transition-shadow"
-            >
-              <CardHeader className="pb-4">
-                <div className="flex items-center gap-1 text-amber-500 mb-2">
-                  {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <Star key={i} className="size-4 fill-current" />
-                  ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {testimonialsData.map((testimonial) => (
+            <Card key={testimonial.name} className="flex flex-col hover:shadow-md transition-shadow">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle className="text-lg font-semibold">{testimonial.name}</CardTitle>
+                  <div className="flex items-center gap-0.5">
+                    {[...Array(testimonial.stars)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                    ))}
+                  </div>
                 </div>
-                <h3 className="font-semibold text-lg">{testimonial.name}</h3>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
-                  &ldquo;{testimonial.text}&rdquo;
-                </p>
+              <CardContent className="flex-grow">
+                <p className="text-muted-foreground">&ldquo;{testimonial.review}&rdquo;</p>
               </CardContent>
             </Card>
           ))}

@@ -1,71 +1,51 @@
-import { Phone, Calendar, Sparkles, CheckCircle2 } from "lucide-react";
+import { Phone, CalendarClock, Hammer, CircleCheck } from 'lucide-react';
 
 const steps = [
   {
-    id: 1,
-    title: "Kontakt i wycena",
-    description: "Zadzwoń lub wyślij zdjęcie. Wycena bezpłatna.",
     icon: Phone,
+    title: "Kontakt i wycena",
+    description: "Zadzwoń lub wyślij zdjęcie. Wycena bezpłatna."
   },
   {
-    id: 2,
+    icon: CalendarClock,
     title: "Ustalamy termin",
-    description: "Przyjeżdżam punktualnie. Szanuję Twój czas.",
-    icon: Calendar,
+    description: "Przyjeżdżam punktualnie. Szanuję Twój czas."
   },
   {
-    id: 3,
+    icon: Hammer,
     title: "Praca",
-    description: "Cyklinuję bezpyłowo. Po mnie jest czysto.",
-    icon: Sparkles,
+    description: "Cyklinuję bezpyłowo. Po mnie jest czysto."
   },
   {
-    id: 4,
+    icon: CircleCheck,
     title: "Odbiór i wskazówki",
-    description: "Pokazuję efekt, daję wskazówki pielęgnacji.",
-    icon: CheckCircle2,
-  },
+    description: "Pokazuję efekt, daję wskazówki pielęgnacji."
+  }
 ];
 
 export function Process() {
   return (
-    <section id="process" className="py-12 lg:py-24 bg-muted">
-      <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-foreground">
-            Od telefonu do nowej podłogi
-          </h2>
-          <p className="max-w-[700px] text-muted-foreground text-lg">
-            Jasne zasady i prosty proces. Bez niespodzianek.
-          </p>
-        </div>
+    <section id="process" className="bg-muted py-16 md:py-24">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-foreground">
+          Od telefonu do nowej podłogi
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+          {/* Connecting Line (Desktop) */}
+          <div className="hidden lg:block absolute top-8 left-0 w-full h-0.5 bg-primary/20 -z-10" />
 
-        <div className="relative grid gap-8 md:grid-cols-4">
-          {/* Connecting Line (Desktop only) */}
-          <div
-            className="hidden md:block absolute top-12 left-[12.5%] w-[75%] h-0.5 bg-border/30 -z-10"
-            aria-hidden="true"
-          />
-
-          {steps.map((step) => (
-            <div key={step.id} className="relative flex flex-col items-center text-center group">
-              {/* Step Number/Icon Container */}
-              <div className="relative flex items-center justify-center w-24 h-24 mb-6 rounded-full bg-background border-4 border-white shadow-sm group-hover:border-primary/20 group-hover:scale-105 transition-all duration-300">
-                <step.icon className="w-10 h-10 text-primary" strokeWidth={1.5} />
-
-                {/* Badge with number */}
-                <div className="absolute -top-1 -right-1 w-8 h-8 flex items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-sm shadow-md ring-2 ring-background">
-                  {step.id}
-                </div>
+          {steps.map((step, index) => (
+            <div key={index} className="flex flex-col items-center text-center relative z-10">
+              <div className="w-16 h-16 rounded-full bg-background border border-primary/20 flex items-center justify-center mb-6 shadow-sm text-primary">
+                <step.icon className="w-8 h-8" />
               </div>
+              <h3 className="text-xl font-bold mb-2 text-foreground">{step.title}</h3>
+              <p className="text-muted-foreground">{step.description}</p>
 
-              {/* Text Content */}
-              <h3 className="text-xl font-bold mb-3 text-foreground">
-                {step.title}
-              </h3>
-              <p className="text-muted-foreground text-base leading-relaxed max-w-[250px]">
-                {step.description}
-              </p>
+              {/* Step Number Background */}
+              <div className="absolute top-0 right-1/4 -mt-2 text-6xl font-black text-primary/5 -z-10 select-none">
+                {index + 1}
+              </div>
             </div>
           ))}
         </div>
