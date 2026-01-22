@@ -1,108 +1,33 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Phone, Mail, MapPin, Hammer, Facebook, Instagram } from "lucide-react";
-
 export function Footer() {
   return (
-    <footer className="bg-midnight pt-20 pb-10 border-t border-white/10" id="kontakt">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-16 lg:grid-cols-2">
-          {/* Contact info */}
+    <footer className="bg-charcoal text-white pt-24 pb-12 px-6 lg:px-12" id="kontakt">
+      <div className="mx-auto max-w-[1600px]">
+        <div className="grid lg:grid-cols-2 gap-12 items-start mb-24">
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="flex items-center justify-center rounded-full border border-primary bg-midnight p-2 text-primary">
-                <Hammer className="h-6 w-6" />
-              </div>
-              <h2 className="text-3xl font-serif text-white">
-                Pan <span className="text-primary">Piotr</span>
-              </h2>
-            </div>
-
-            <p className="mb-10 max-w-md text-gray-400 font-light leading-relaxed">
-              Ekskluzywna renowacja podłóg. Łączymy rzemieślniczą precyzję z
-              nowoczesną technologią. Skontaktuj się z nami, aby nadać swojemu
-              wnętrzu nowy blask.
-            </p>
-
-            <div className="space-y-6">
-              <a
-                href="tel:511692325"
-                className="group flex items-center gap-6 text-xl text-white transition-colors hover:text-primary"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-white/5 border border-white/10 group-hover:border-primary/50 group-hover:bg-primary/10 transition-all">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <span className="font-serif tracking-wide">511 692 325</span>
-              </a>
-
-              <a
-                href="mailto:kontakt@panpiotr.pl"
-                className="group flex items-center gap-6 text-xl text-white transition-colors hover:text-primary"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-white/5 border border-white/10 group-hover:border-primary/50 group-hover:bg-primary/10 transition-all">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
-                <span className="font-serif tracking-wide text-base">
-                  kontakt@panpiotr.pl
-                </span>
-              </a>
-
-              <div className="flex items-center gap-6 text-xl text-white">
-                <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-white/5 border border-white/10">
-                  <MapPin className="h-5 w-5 text-primary" />
-                </div>
-                <span className="font-serif tracking-wide text-base">
-                  Kielce i okolice (woj. Świętokrzyskie)
-                </span>
-              </div>
+            <span className="block text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Kontakt</span>
+            <a className="block font-serif text-6xl sm:text-8xl lg:text-[9rem] leading-none hover:text-wood transition-colors mb-8" href="tel:511692325">
+              511 692 325
+            </a>
+            <a className="text-xl lg:text-2xl text-gray-400 hover:text-white transition-colors border-b border-transparent hover:border-white inline-block pb-1" href="mailto:kontakt@panpiotr.pl">
+              kontakt@panpiotr.pl
+            </a>
+            <div className="mt-12 text-gray-400">
+              <p className="uppercase tracking-widest text-xs font-bold mb-2">Lokalizacja</p>
+              <p className="font-serif text-2xl">Kielce, ul. Sienkiewicza</p>
+              <p className="text-sm mt-1">(Dojazd do klienta w całym województwie)</p>
             </div>
           </div>
-
-          {/* Map & Social */}
-          <div className="flex flex-col gap-8">
-            <div className="h-80 w-full overflow-hidden rounded-sm border border-white/10 bg-midnight-dark relative group">
-              <div className="absolute inset-0 bg-primary/10 z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-500" />
-              <Image
-                src="/images/7.jpg"
-                alt="Mapa Kielce"
-                fill
-                className="object-cover opacity-70 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
-              />
-              <div className="absolute bottom-4 left-4 z-20 bg-midnight/90 border border-primary/30 px-4 py-2 rounded-sm backdrop-blur-md">
-                <p className="text-primary text-xs font-bold uppercase tracking-widest">
-                  Obszar działania
-                </p>
-                <p className="text-white text-sm">Kielce + 50km</p>
-              </div>
-            </div>
-
-            <div className="flex gap-4 justify-end">
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-sm border border-white/10 bg-white/5 text-gray-400 transition-all hover:bg-primary hover:text-midnight hover:border-primary"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-sm border border-white/10 bg-white/5 text-gray-400 transition-all hover:bg-primary hover:text-midnight hover:border-primary"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
+          <div className="h-[400px] w-full rounded-sm overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 relative">
+            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCT42iLfU20l5MToYMTLPjB6w0rWxDnyozwOdi62EZRji3-ggpXscqaYrgtEnRXSWLNusAuPNQLvH_xYz0ABNk7VQiTjGGtYUQgtCuVkZXKA6xfsLg33yZqhmEong22LoPlVcnToNbNCYX_ObsEXsEN0jr7cD7NhDx14AQo72Rkn9XYKBZCrGPaXXoX_Kq9Q4F8RPGFHstV0lU4C4xlF863C5qN7tpWM1JYQF-b97PAyJ72mcbKDE1wNKDUS0Dqc8L5t5KhGt5bRQ')" }}></div>
+            <div className="absolute inset-0 bg-black/10 hover:bg-transparent transition-colors"></div>
+            <div className="absolute bottom-6 left-6 bg-white text-black px-4 py-2 font-bold text-xs uppercase tracking-widest">Obszar działania</div>
           </div>
         </div>
-
-        {/* Bottom bar */}
-        <div className="mt-16 border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-light">
-          <p>&copy; 2024 Pan Piotr Cyklinowanie Premium. Wszelkie prawa zastrzeżone.</p>
-          <div className="flex gap-6">
-            <Link href="#" className="hover:text-primary transition-colors">
-              Polityka Prywatności
-            </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
-              Regulamin
-            </Link>
+        <div className="flex flex-col md:flex-row justify-between items-center border-t border-white/10 pt-8 text-xs text-gray-500 uppercase tracking-widest">
+          <p>© 2024 Pan Piotr Cyklinowanie</p>
+          <div className="flex gap-6 mt-4 md:mt-0">
+            <a className="hover:text-white transition-colors" href="#">Instagram</a>
+            <a className="hover:text-white transition-colors" href="#">Facebook</a>
           </div>
         </div>
       </div>

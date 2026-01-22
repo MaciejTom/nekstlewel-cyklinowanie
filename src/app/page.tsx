@@ -1,16 +1,16 @@
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
-import { StatsBar } from "@/components/sections/StatsBar";
-import { WhyUs } from "@/components/sections/WhyUs";
+import { FeaturesV1 } from "@/components/sections/features/FeaturesV1";
+import { FeaturesV2 } from "@/components/sections/features/FeaturesV2";
 import { Philosophy } from "@/components/sections/Philosophy";
-import { Services } from "@/components/sections/Services";
-import { Process } from "@/components/sections/Process";
+import { ServicesV1 } from "@/components/sections/services/ServicesV1";
+import { ServicesV2 } from "@/components/sections/services/ServicesV2";
+import { ServicesV3 } from "@/components/sections/services/ServicesV3";
+import { ServicesV4 } from "@/components/sections/services/ServicesV4";
 import { CaseStudies } from "@/components/sections/CaseStudies";
-import { BeforeAfter } from "@/components/sections/BeforeAfter";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
 import { Footer } from "@/components/sections/Footer";
-import { FloatingCTA } from "@/components/sections/FloatingCTA";
 
 export default function Home() {
   return (
@@ -18,18 +18,18 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <StatsBar />
-        <WhyUs />
+        <FeaturesV1 />
+        <FeaturesV2 />
         <Philosophy />
-        <Services />
-        <Process />
+        <ServicesV1 />
+        <ServicesV2 />
+        <ServicesV3 />
+        <ServicesV4 />
         <CaseStudies />
-        <BeforeAfter />
         <Testimonials />
         <FAQ />
       </main>
       <Footer />
-      <FloatingCTA />
     </div>
   );
 }
