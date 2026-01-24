@@ -36,13 +36,13 @@ export function HeroContent() {
           <div className="mt-10 flex flex-wrap gap-6">
             <a
               href="tel:511692325"
-              className="bg-wood text-white px-8 py-4 font-bold text-sm uppercase tracking-wider hover:bg-wood/90 transition-colors"
+              className="bg-wood text-white px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-wood/90 transition-colors"
             >
               Zadzwoń: 511 692 325
             </a>
             <a
               href="#kontakt"
-              className="border border-white/50 text-white px-8 py-4 font-bold text-sm uppercase tracking-wider hover:bg-white hover:text-charcoal transition-all"
+              className="border border-white/50 text-white px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-white hover:text-charcoal transition-all"
             >
               Wyślij zdjęcie podłogi do wyceny
             </a>

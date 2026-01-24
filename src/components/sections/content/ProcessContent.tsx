@@ -41,10 +41,10 @@ export function ProcessContent() {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] w-full overflow-hidden bg-gray-200 sticky top-24">
               <Image
-                src="/images/6.jpg"
-                alt="Maszyny do cyklinowania bezpyłowego w pracy"
+                src="/images/maszyna.jpg"
+                alt="Profesjonalna maszyna do cyklinowania bezpyłowego"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="object-cover"
               />
             </div>
           </div>

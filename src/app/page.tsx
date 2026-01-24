@@ -1,6 +1,6 @@
 import { Header } from "@/components/sections/Header";
 import { HeroContent } from "@/components/sections/content/HeroContent";
-import { WhyUsContent } from "@/components/sections/content/WhyUsContent";
+import { FeaturesV2 } from "@/components/sections/features/FeaturesV2";
 import { ServicesContent } from "@/components/sections/content/ServicesContent";
 import { ProcessContent } from "@/components/sections/content/ProcessContent";
 import { CaseStudiesContent } from "@/components/sections/content/CaseStudiesContent";
@@ -14,10 +14,10 @@ export default function Home() {
       <Header />
       <main>
         <HeroContent />
-        <WhyUsContent />
+        <FeaturesV2 />
         <ServicesContent />
-        <ProcessContent />
         <CaseStudiesContent />
+        <ProcessContent />
         <TestimonialsContent />
         <FAQContent />
       </main>
