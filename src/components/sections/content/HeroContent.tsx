@@ -1,16 +1,15 @@
-import Image from "next/image";
-
 export function HeroContent() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <Image
-        src="/images/1.jpg"
-        alt="Parkiet jodełkowy po renowacji - efekt lustrzany"
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="absolute inset-0 bg-black/30" />
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            'url("https://lh3.googleusercontent.com/aida-public/AB6AXuA94GyGi2mqej2PNsu-5SYNBbEybAsT40qfv2rOEUdajN7W_wZkJAfbUiLZIvBBmO4C0OYFQKcaqWw-Zhkcp1ey8cZq2bBzOpJTqZYEe_xeuAvE6__azTz4dZzs3xWvWW5Th4IUIHhwNl1ygR9i0Lv9rqEeQ5s9UygsrF2-W83H_Oero6-jqIp4m8P59-FUqyfvgLXgbiAJuFdbhHdZ-HwyXu49TdaSwpmXjdgUaKk-kzvzgmiPRxs4GyF6wlOue_XEwCdiEozsNpU")',
+        }}
+      >
+        <div className="absolute inset-0 bg-black/30" />
+      </div>
 
       <div className="absolute bottom-0 left-0 h-full w-full max-w-[1600px] mx-auto px-6 lg:px-12 pointer-events-none flex flex-col justify-end pb-12 lg:pb-24">
         <div className="max-w-4xl pointer-events-auto">
@@ -22,7 +21,8 @@ export function HeroContent() {
 
           {/* H1 */}
           <h1 className="font-serif text-5xl text-white sm:text-6xl lg:text-8xl leading-[0.95] tracking-tight">
-            <span className="block font-medium italic">Twój parkiet jak nowy.</span>
+            <span className="block font-medium italic">Twój parkiet</span>
+            <span className="block font-medium italic">jak nowy.</span>
             <span className="block font-black not-italic">Bez kurzu.</span>
           </h1>
 
@@ -44,22 +44,22 @@ export function HeroContent() {
               href="#kontakt"
               className="border border-white/50 text-white px-8 py-4 font-bold text-sm uppercase tracking-wider hover:bg-white hover:text-charcoal transition-all"
             >
-              Wyślij zdjęcie do wyceny
+              Wyślij zdjęcie podłogi do wyceny
             </a>
           </div>
 
           {/* Social Proof Bar */}
-          <div className="mt-12 flex flex-wrap gap-8 text-white/80 text-sm">
-            <div className="flex items-center gap-2">
-              <span className="text-wood font-bold">4.9★</span>
-              <span>na 50 opinii</span>
+          <div className="mt-12 flex flex-wrap gap-4 text-white/90 text-sm font-medium">
+            <div className="flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 transition-colors hover:bg-white/15">
+              <span className="text-wood font-bold text-base">★ 4.9</span>
+              <span>50+ opinii</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-wood">●</span>
+            <div className="flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 transition-colors hover:bg-white/15">
+              <div className="w-2 h-2 rounded-full bg-wood shadow-[0_0_8px_rgba(204,163,131,0.6)]" />
               <span>Bezpyłowe maszyny</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-wood">●</span>
+            <div className="flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 transition-colors hover:bg-white/15">
+              <div className="w-2 h-2 rounded-full bg-wood shadow-[0_0_8px_rgba(204,163,131,0.6)]" />
               <span>Parkiety 20-50 letnie jak nowe</span>
             </div>
           </div>
