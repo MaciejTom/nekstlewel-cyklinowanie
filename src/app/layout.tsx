@@ -1,5 +1,21 @@
 import type { Metadata } from "next";
+import { Manrope, Playfair_Display } from "next/font/google";
 import "./globals.css";
+
+const manrope = Manrope({
+  subsets: ["latin-ext"],
+  weight: ["400", "600", "700"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin-ext"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Pan Piotr - Premium Cyklinowanie Bezpyłowe Kielce",
@@ -19,16 +35,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl">
+    <html lang="pl" className={`${manrope.variable} ${playfair.variable}`}>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://lh3.googleusercontent.com" />
-        <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
+        {/* Material Symbols loaded async - not render blocking */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0&display=swap"
+          as="style"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0&display=swap"
