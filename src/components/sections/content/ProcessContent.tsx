@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { IconPhone } from "@/components/icons";
 
 export function ProcessContent() {
   const steps = [
@@ -83,7 +84,7 @@ export function ProcessContent() {
                 className="inline-flex items-center gap-4 bg-charcoal text-white px-8 py-4 font-bold text-sm uppercase tracking-wider hover:bg-wood transition-colors"
               >
                 <span>Zadzwoń teraz</span>
-                <span className="material-symbols-outlined">phone</span>
+                <IconPhone className="w-5 h-5" />
               </a>
             </div>
           </div>

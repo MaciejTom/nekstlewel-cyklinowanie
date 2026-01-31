@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html class="dark" lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pan Piotr - Premium Cyklinowanie Bezpyłowe Kielce</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#d4a574",
+              "primary-dark": "#b08556",
+              "primary-light": "#e5c49f",
+              "midnight": "#2c1810",
+              "midnight-light": "#3d241a",
+              "midnight-dark": "#1a0e09",
+              "gold-border": "#d4a574",
+              "text-main": "#f3f4f6",
+              "text-muted": "#d1d5db",
+            },
+            fontFamily: {
+              "sans": ["Manrope", "sans-serif"],
+              "serif": ["Playfair Display", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            backgroundImage: {
+              'hero-glow': 'radial-gradient(circle at center, rgba(212, 165, 116, 0.15) 0%, transparent 70%)',
+            }
+          },
+        },
+      }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a0e09; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3d241a; 
+            border-radius: 4px;
+            border: 1px solid #5a382b;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4a574; 
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        .gold-glow {
+            box-shadow: 0 0 15px rgba(212, 165, 116, 0.2);
+        }
+        .gold-glow:hover {
+            box-shadow: 0 0 25px rgba(212, 165, 116, 0.4);
+        }
+        .slider-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: #d4a574;
+            cursor: ew-resize;
+            z-index: 20;
+            transform: translateX(-50%);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .slider-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background: #d4a574;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body class="bg-midnight text-text-main antialiased font-sans selection:bg-primary selection:text-midnight">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full bg-midnight-dark/95 backdrop-blur-md border-b border-white/10 shadow-lg">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex h-20 items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center rounded-full border border-primary/30 bg-midnight p-2 text-primary">
+<span class="material-symbols-outlined" style="font-size: 24px;">carpenter</span>
+</div>
+<h2 class="text-xl font-serif font-bold leading-tight tracking-wide text-white">
+                        Pan <span class="text-primary">Piotr</span>
+</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors font-medium" href="#uslugi">Usługi</a>
+<a class="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors font-medium" href="#proces">Proces</a>
+<a class="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors font-medium" href="#realizacje">Realizacje</a>
+<a class="text-sm uppercase tracking-widest text-gray-300 hover:text-primary transition-colors font-medium" href="#opinie">Opinie</a>
+</nav>
+<div class="flex gap-4">
+<a class="hidden sm:flex h-11 items-center justify-center rounded-sm bg-primary px-6 text-sm font-bold uppercase tracking-wider text-midnight shadow-[0_0_15px_rgba(212,165,116,0.3)] transition-all hover:bg-primary-light hover:shadow-[0_0_20px_rgba(212,165,116,0.5)] active:scale-95" href="tel:511692325">
+<span class="material-symbols-outlined mr-2 text-[18px]">call</span>
+                            Zadzwoń
+                        </a>
+<a class="flex h-11 items-center justify-center rounded-sm border border-primary/30 bg-transparent px-6 text-sm font-bold uppercase tracking-wider text-primary hover:bg-primary/10 transition-colors" href="#kontakt">
+                            Wycena
+                        </a>
+</div>
+</div>
+</div>
+</header>
+<section class="relative bg-midnight overflow-hidden">
+<div class="absolute inset-0 bg-hero-glow z-0 pointer-events-none"></div>
+<div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none"></div>
+<div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24 relative z-10">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="max-w-2xl">
+<div class="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-midnight-light/50 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">star</span>
+                                Premium Quality Service
+                            </div>
+<h1 class="mb-6 text-5xl font-serif font-medium leading-tight text-white sm:text-6xl lg:text-7xl">
+                                Twój parkiet. <br/>
+<span class="bg-gradient-to-r from-primary via-primary-light to-primary bg-clip-text text-transparent italic">Perfekcja</span> w każdym detalu.
+                            </h1>
+<p class="mb-10 text-lg font-light leading-relaxed text-gray-300 sm:text-xl border-l-2 border-primary pl-6">
+                                Specjalistyczna renowacja podłóg drewnianych w Kielcach. Technologia bezpyłowa klasy premium dla wymagających wnętrz.
+                            </p>
+<div class="flex flex-col sm:flex-row gap-5">
+<a class="flex h-14 items-center justify-center rounded-sm bg-primary px-8 text-base font-bold uppercase tracking-wider text-midnight shadow-[0_0_20px_rgba(212,165,116,0.25)] transition-all hover:translate-y-[-2px] hover:shadow-[0_0_30px_rgba(212,165,116,0.4)]" href="tel:511692325">
+<span class="material-symbols-outlined mr-2">call</span>
+                                    511 692 325
+                                </a>
+<button class="group flex h-14 items-center justify-center rounded-sm border border-white/20 bg-white/5 px-8 text-base font-medium text-white backdrop-blur-sm transition-all hover:bg-white/10 hover:border-primary/50">
+<span class="material-symbols-outlined mr-2 group-hover:text-primary transition-colors">photo_camera</span>
+                                    Wyślij zdjęcie podłogi
+                                </button>
+</div>
+</div>
+<div class="relative hidden lg:block h-[600px]">
+<div class="absolute inset-0 rounded-lg overflow-hidden border border-white/5 shadow-2xl rotate-3 bg-midnight-dark">
+<div class="absolute inset-0 bg-black/20 z-10"></div>
+<div class="h-full w-full bg-cover bg-center opacity-90" data-alt="Close up of a beautifully restored glossy oak parquet floor reflecting spotlight" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA94GyGi2mqej2PNsu-5SYNBbEybAsT40qfv2rOEUdajN7W_wZkJAfbUiLZIvBBmO4C0OYFQKcaqWw-Zhkcp1ey8cZq2bBzOpJTqZYEe_xeuAvE6__azTz4dZzs3xWvWW5Th4IUIHhwNl1ygR9i0Lv9rqEeQ5s9UygsrF2-W83H_Oero6-jqIp4m8P59-FUqyfvgLXgbiAJuFdbhHdZ-HwyXu49TdaSwpmXjdgUaKk-kzvzgmiPRxs4GyF6wlOue_XEwCdiEozsNpU");'></div>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-midnight-light p-6 rounded-lg border border-primary/20 shadow-xl z-20 max-w-xs">
+<div class="flex items-center gap-4 mb-3">
+<div class="bg-primary/10 p-2 rounded-full text-primary">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div>
+<p class="text-white font-serif text-lg">Gwarancja Jakości</p>
+<p class="text-xs text-gray-400 uppercase tracking-wider">Certyfikowany Mistrz</p>
+</div>
+</div>
+<p class="text-sm text-gray-300 font-light italic">"Każda deska traktowana jest z najwyższym szacunkiem dla tradycji rzemiosła."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="border-y border-white/5 bg-midnight-dark relative">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
+<div class="flex flex-col items-center justify-center gap-2 text-center px-4">
+<span class="text-4xl font-serif text-primary">4.9/5</span>
+<p class="text-xs uppercase tracking-widest text-gray-400">Ocena klientów</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 text-center px-4">
+<span class="text-4xl font-serif text-primary">20+ Lat</span>
+<p class="text-xs uppercase tracking-widest text-gray-400">Tradycji rzemieślniczej</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-2 text-center px-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<span class="text-xl font-medium text-white">99% Bezpyłowo</span>
+</div>
+<p class="text-xs uppercase tracking-widest text-gray-400">Technologia Bona Deep Clean</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 sm:py-32 bg-midnight relative overflow-hidden">
+<div class="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="mb-16 md:text-center max-w-3xl mx-auto">
+<h2 class="text-3xl font-serif text-white sm:text-5xl mb-6">
+<span class="text-primary italic">Rzemiosło</span> spotyka technologię
+                    </h2>
+<p class="text-lg font-light text-gray-400">
+                        Renowacja podłogi nie musi oznaczać remontu całego domu. Nasz proces łączy tradycyjne stolarstwo z nowoczesnymi systemami bezpyłowymi.
+                    </p>
+</div>
+<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+<div class="group relative p-8 bg-midnight-light border border-white/5 hover:border-primary/40 transition-all duration-500 rounded-sm hover:-translate-y-2">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full border border-primary/20 bg-midnight text-primary shadow-[0_0_15px_rgba(212,165,116,0.1)] group-hover:shadow-[0_0_20px_rgba(212,165,116,0.3)] transition-shadow">
+<span class="material-symbols-outlined text-2xl">vacuum</span>
+</div>
+<h3 class="mb-3 text-xl font-serif text-white">Czystość Absolutna</h3>
+<p class="text-sm font-light leading-relaxed text-gray-400">
+                                Systemy Bona pochłaniają 99% pyłu. Twoje ściany, meble i zasłony pozostają nieskazitelnie czyste.
+                            </p>
+</div>
+</div>
+<div class="group relative p-8 bg-midnight-light border border-white/5 hover:border-primary/40 transition-all duration-500 rounded-sm hover:-translate-y-2">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full border border-primary/20 bg-midnight text-primary shadow-[0_0_15px_rgba(212,165,116,0.1)] group-hover:shadow-[0_0_20px_rgba(212,165,116,0.3)] transition-shadow">
+<span class="material-symbols-outlined text-2xl">handyman</span>
+</div>
+<h3 class="mb-3 text-xl font-serif text-white">Ekspert od Staroci</h3>
+<p class="text-sm font-light leading-relaxed text-gray-400">
+                                Przywracamy świetność przedwojennym parkietom, traktując każdą klepkę z należytą uwagą.
+                            </p>
+</div>
+</div>
+<div class="group relative p-8 bg-midnight-light border border-white/5 hover:border-primary/40 transition-all duration-500 rounded-sm hover:-translate-y-2">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full border border-primary/20 bg-midnight text-primary shadow-[0_0_15px_rgba(212,165,116,0.1)] group-hover:shadow-[0_0_20px_rgba(212,165,116,0.3)] transition-shadow">
+<span class="material-symbols-outlined text-2xl">science</span>
+</div>
+<h3 class="mb-3 text-xl font-serif text-white">Alchemia Drewna</h3>
+<p class="text-sm font-light leading-relaxed text-gray-400">
+                                Dobieramy lakiery i oleje idealnie do gatunku drewna, aby wydobyć jego szlachetny rysunek.
+                            </p>
+</div>
+</div>
+<div class="group relative p-8 bg-midnight-light border border-white/5 hover:border-primary/40 transition-all duration-500 rounded-sm hover:-translate-y-2">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-full border border-primary/20 bg-midnight text-primary shadow-[0_0_15px_rgba(212,165,116,0.1)] group-hover:shadow-[0_0_20px_rgba(212,165,116,0.3)] transition-shadow">
+<span class="material-symbols-outlined text-2xl">build_circle</span>
+</div>
+<h3 class="mb-3 text-xl font-serif text-white">Mistrzowska Korekta</h3>
+<p class="text-sm font-light leading-relaxed text-gray-400">
+                                Skutecznie naprawiamy błędy poprzednich ekip, niwelując wszelkie nierówności.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-midnight-dark py-20 lg:py-32 border-t border-white/5" id="uslugi">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-16 flex flex-col justify-between gap-6 sm:flex-row sm:items-end border-b border-white/10 pb-8">
+<div>
+<h2 class="text-4xl font-serif text-white mb-2">Nasze Usługi</h2>
+<p class="text-gray-400 font-light">Kompleksowa renowacja podłóg drewnianych.</p>
+</div>
+<button class="flex items-center gap-2 text-sm uppercase tracking-widest font-bold text-primary hover:text-white transition-colors">
+                        Pełna oferta <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="group relative overflow-hidden rounded-sm border border-white/10 bg-midnight transition-all hover:border-primary/50">
+<div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent z-10 opacity-90"></div>
+<div class="h-80 w-full overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="Machine sanding a wooden floor creating minimal dust" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_XtdsD5jnHKvNSJLhdXvnN1jgWoaeo0XuVOupW5xGrRxXCiyWCsl2WCFXR_8EkJsCGDAAUSNZu9U57POKxEmAQ0oi8PkafKv4i3ULAwelhFNr7Jh7Fh5BALuNvACsezpcC1l05wRkmh-qYgPTNUsPQYS-PR3GWdVPBYtWgzTdTAAWRCjmWnoJW2rXvEx3POTGdfaoroO-Gx4nQyNfL27UyrWC0DBixYWRtQfl-ZH4wJxDfyHVPkgQMhI_UirR1fvcbVEDup4nF7k");'>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-8 z-20">
+<div class="w-12 h-0.5 bg-primary mb-4 transition-all group-hover:w-24"></div>
+<h3 class="mb-2 text-2xl font-serif text-white">Cyklinowanie Bezpyłowe</h3>
+<p class="text-sm font-light text-gray-300 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                                Precyzyjne usuwanie starych powłok z użyciem maszyn z certyfikatem HEPA. Czystość i perfekcja.
+                            </p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-sm border border-white/10 bg-midnight transition-all hover:border-primary/50">
+<div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent z-10 opacity-90"></div>
+<div class="h-80 w-full overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="Person applying varnish to a wooden floor with a roller" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8naf4StAP0BkZ-KovCKZgUWQTAsj4f3Grf6wT6cQ-0qJeXbBEuiD-EyrVC_mm2I108wqnQhPIR9NVum8QQow6cCw5WAGrNxHoW4kIpL3VuM9pRd9Y8iCNBaaGn8UNkn8_7ggNJLaxaQ6mYqCKhc3dNV04R3I8wOOz3BmcdMyJ5epS_vS_a7MA7Xf_KzceToVDwu9_WdTLTVowFiNF6ESp8rbAzK93GRjvVuSB3nKEtSSqTYTzlc8-wJXhbSgFWTEg16HMALHimVg");'>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-8 z-20">
+<div class="w-12 h-0.5 bg-primary mb-4 transition-all group-hover:w-24"></div>
+<h3 class="mb-2 text-2xl font-serif text-white">Lakierowanie Premium</h3>
+<p class="text-sm font-light text-gray-300 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                                Aplikacja najwyższej klasy lakierów (mat, satyna, połysk) lub naturalnych olejowosków.
+                            </p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-sm border border-white/10 bg-midnight transition-all hover:border-primary/50">
+<div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent z-10 opacity-90"></div>
+<div class="h-80 w-full overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="Detailed shot of wooden floor gap filling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCaSaezPkHmM4UOrq7kyklBeF-8GgxgYOKvIc_Z1NlYrZamlYRekDoZ2p6MSKbnr9HGnW4NfBUZOSj-UfAzNAg_E7tmilkdUwikGFZ_ZrNdhoDS1WwoSbU2phlhZzKNvJ6yDr1HvKNobzgNwK_JyOGA9IBJ1euHYiPSOCdV8s7dy5m4N8P4gvscpTWo4hmBr5uaZYuWQWlagPzQ90MmazD1_QLV0rFyvVE3fji-DcyXjEt8QT_MMtQkX3yqqmbZxzZlULvPXUO_68g");'>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-8 z-20">
+<div class="w-12 h-0.5 bg-primary mb-4 transition-all group-hover:w-24"></div>
+<h3 class="mb-2 text-2xl font-serif text-white">Renowacja Detali</h3>
+<p class="text-sm font-light text-gray-300 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                                Szpachlowanie ubytków, wymiana klepek, doklejanie luźnych elementów. Dbałość o każdy milimetr.
+                            </p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-sm border border-white/10 bg-midnight transition-all hover:border-primary/50">
+<div class="absolute inset-0 bg-gradient-to-t from-midnight via-transparent to-transparent z-10 opacity-90"></div>
+<div class="h-80 w-full overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="Installation of white wooden baseboards" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwQ2vNO--MIxFDmzPi5Ig6val9-ynanZq3oEhDMVDWU1SEFSO1ALtBil2egklDMKn_id17Dx1Ox3dWdfJmw2LcfBe3TAulWEiC6KEyiviiEBdhPvAShtnSNEha66pl2MVm3-kXD1PjeTOZL-W2FjDROmcsAvW7TOvxPFaxA8B_xa1vQIXP1HboUYYV3LT_-JNv9vJCCNln171COvYU1VFzLMWZIFGbcR0QQPd1UIJ8-NcZFPXiIgZAPYWX6pX2igmbaj6cxqrCEf0");'>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-8 z-20">
+<div class="w-12 h-0.5 bg-primary mb-4 transition-all group-hover:w-24"></div>
+<h3 class="mb-2 text-2xl font-serif text-white">Montaż Listew</h3>
+<p class="text-sm font-light text-gray-300 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                                Idealne zwieńczenie podłogi. Listwy drewniane lub MDF montowane z jubilerską precyzją.
+                            </p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-sm border border-white/10 bg-midnight transition-all hover:border-primary/50 lg:col-span-2">
+<div class="absolute inset-0 bg-gradient-to-r from-midnight via-midnight/80 to-transparent z-10"></div>
+<div class="absolute inset-0 h-full w-full bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="Staining a wooden floor to change its color" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmV3lV_VjDOcJZ17ICcw4hgxHMa33u__bb_26nv1Awgc1EGfXPAGOglSlo3wKhIu7oG1CVY8c9dP1WCGA5aeHWRPdE_jdkfrPonEcafe2GSfo5NnGYegKsxGqk9jblfhQ5zGmCjtvOefjNsoI21bIwtivGNp7Y003TUXaKmYDBxLPU8PhEsE4yXLfkOSBD6p7PyZHAt8P9EFyd-4_12uruEYFoChNXSpgEWCYAiE0_ykAHfEfwA7tm6x7MepAq41zCucha_Q4QV54");'></div>
+<div class="relative z-20 flex h-full flex-col justify-center p-8 sm:p-12 max-w-lg">
+<div class="w-12 h-0.5 bg-primary mb-6 transition-all group-hover:w-24"></div>
+<h3 class="mb-4 text-3xl font-serif text-white">Artystyczne Barwienie</h3>
+<p class="mb-6 text-base font-light text-gray-300 leading-relaxed">
+                            Zmień charakter swojego wnętrza bez wymiany podłogi. Od skandynawskiej bieli po głęboki orzech czy heban. Używamy profesjonalnych bejc penetrujących.
+                        </p>
+<button class="w-fit text-sm font-bold uppercase tracking-widest text-primary hover:text-white transition-colors flex items-center gap-2">
+                            Zobacz paletę kolorów <span class="material-symbols-outlined text-[16px]">palette</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-midnight relative" id="proces">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<span class="text-primary text-sm font-bold uppercase tracking-widest">Transparentność</span>
+<h2 class="mt-2 text-4xl font-serif text-white">Jak pracujemy?</h2>
+</div>
+<div class="relative">
+<div class="absolute left-0 top-12 hidden h-0.5 w-full bg-white/10 lg:block"></div>
+<div class="grid grid-cols-1 gap-12 lg:grid-cols-4">
+<div class="relative flex flex-col items-center text-center group">
+<div class="relative z-10 flex h-24 w-24 items-center justify-center rounded-full border border-primary/30 bg-midnight text-2xl font-serif text-primary shadow-[0_0_15px_rgba(212,165,116,0.1)] transition-all group-hover:scale-110 group-hover:border-primary group-hover:shadow-[0_0_25px_rgba(212,165,116,0.3)]">1</div>
+<h3 class="mt-8 text-xl font-serif text-white">Konsultacja</h3>
+<p class="mt-3 text-sm font-light text-gray-400 leading-relaxed">Rozmowa o Twoich oczekiwaniach. Wstępna wycena online lub telefonicznie.</p>
+</div>
+<div class="relative flex flex-col items-center text-center group">
+<div class="relative z-10 flex h-24 w-24 items-center justify-center rounded-full border border-white/10 bg-midnight-light text-2xl font-serif text-gray-300 shadow-lg transition-all group-hover:scale-110 group-hover:border-primary group-hover:text-primary">2</div>
+<h3 class="mt-8 text-xl font-serif text-white">Ekspertyza</h3>
+<p class="mt-3 text-sm font-light text-gray-400 leading-relaxed">Wizyta na miejscu. Pomiar wilgotności drewna, ocena uszkodzeń, dobór chemii.</p>
+</div>
+<div class="relative flex flex-col items-center text-center group">
+<div class="relative z-10 flex h-24 w-24 items-center justify-center rounded-full border border-white/10 bg-midnight-light text-2xl font-serif text-gray-300 shadow-lg transition-all group-hover:scale-110 group-hover:border-primary group-hover:text-primary">3</div>
+<h3 class="mt-8 text-xl font-serif text-white">Renowacja</h3>
+<p class="mt-3 text-sm font-light text-gray-400 leading-relaxed">Prace właściwe. Szlifowanie, szpachlowanie i lakierowanie. 2-4 dni robocze.</p>
+</div>
+<div class="relative flex flex-col items-center text-center group">
+<div class="relative z-10 flex h-24 w-24 items-center justify-center rounded-full border border-white/10 bg-midnight-light text-2xl font-serif text-gray-300 shadow-lg transition-all group-hover:scale-110 group-hover:border-primary group-hover:text-primary">4</div>
+<h3 class="mt-8 text-xl font-serif text-white">Odbiór</h3>
+<p class="mt-3 text-sm font-light text-gray-400 leading-relaxed">Finalna inspekcja jakości. Przekazanie instrukcji pielęgnacji.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-midnight-dark py-20 lg:py-32" id="realizacje">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-16 md:text-center">
+<h2 class="text-4xl font-serif text-white mb-4">Metamorfozy</h2>
+<p class="text-gray-400 font-light max-w-2xl mx-auto">Przesuń suwak, aby zobaczyć efekt naszej pracy. Przywracamy blask nawet najbardziej zniszczonym podłogom.</p>
+</div>
+<div class="grid gap-12 lg:grid-cols-2">
+<div class="group bg-midnight rounded-sm border border-white/5 p-1">
+<div class="relative h-[350px] overflow-hidden rounded-sm cursor-col-resize select-none">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Renovated glossy oak parquet floor after renovation" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdo8pqDQf6XZOAMFJXGxNzg8fxVXBHBiFlScf-irpnmLodrpCN0mD1bTOoWBzcdX4NPXwgVMBFzPCZIp4rVRvj4g24EKrU7GYYPOMKcl9-8amGUqyfR3YQm6nB-E-PPSvl4fVDQl7m4bOul8XcnZUUD6UDJ2P9m8Smj6y51WXtLc8FTdKyHph616-gRJV8h6_gwXzoRu1pIGJKM8M_2KcNlh2bCnLDdQUPxe6qN6hoe1R7xUO4KXiFwfVdyx8Egs6-hI7-9O9Oa4I");'>
+<div class="absolute top-4 right-4 bg-primary/90 text-midnight text-xs font-bold px-3 py-1 rounded-sm shadow-lg">PO</div>
+</div>
+<div class="absolute inset-0 bg-cover bg-center overflow-hidden w-1/2 border-r-2 border-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAnK4OKJJxP12wQMPHYDjuyp7BoQM1XNVCiC3jTK7wZg7A4MdbZIk4F43GqNqNVnyOrpDgeF-5KCT8IdEYlRlNlPiMcgriLSIan4RyAW3KL9Jx3WsL7UOhzk-9yrMsiQPKK7DoQDQ0Mr3DnHVJgsWla6zxamctqGGfy0BK8ZGeKWidv8MeEr-zvBXXV68ZXwRzG4UPgUY-6cZggZj_gFW45j7TLcwa5jI0e1Jz5ioNHqWH_coN655-vSfNgCPqgFIrDAfHLzm9mLI"); filter: grayscale(100%) contrast(120%); box-shadow: 5px 0 15px rgba(0,0,0,0.5);'>
+<div class="absolute top-4 left-4 bg-black/70 text-white text-xs font-bold px-3 py-1 rounded-sm backdrop-blur-sm">PRZED</div>
+</div>
+<div class="absolute top-0 bottom-0 left-1/2 w-0.5 bg-primary shadow-[0_0_10px_rgba(212,165,116,0.8)] z-10 flex items-center justify-center">
+<div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-midnight text-sm">swap_horiz</span>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-serif text-white">Dębowy Klasyk</h3>
+<p class="mt-2 text-sm font-light text-gray-400">Kielce, Osiedle Słoneczne. 40-letni parkiet, lakier matowy Bona Traffic.</p>
+</div>
+</div>
+<div class="group bg-midnight rounded-sm border border-white/5 p-1">
+<div class="relative h-[350px] overflow-hidden rounded-sm cursor-col-resize select-none">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Bright clean pine floor boards after sanding and varnishing" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAyJz13E00qYtKTsRUzSd-bzSA4JXMl5CLxDmuHW5uJHzj0FYvj3LYhz50wKCkFgVsXf3Lg_u0xIXbwpCU1hnNiTNS9Ktk7b4HnIOboQ7KJdEYLFkQSVJcE2C7SIHQZRr8wKJdOGphDkO6h0aF7MInrgdlTDkrxgV5wXuZs2k3CExrq2d5-z8h66CIt2OnbvkjTtgzIodln4QuhDx_93Y5hiIS-Bql-zaxz_XeAjOkx5B78_gY5kqrxPLCPylZr79gevvm125RAWNo");'>
+<div class="absolute top-4 right-4 bg-primary/90 text-midnight text-xs font-bold px-3 py-1 rounded-sm shadow-lg">PO</div>
+</div>
+<div class="absolute inset-0 bg-cover bg-center overflow-hidden w-1/2 border-r-2 border-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8ZAxHvbebUtA9ersQ5CCCWOtYJ82g0kj4fap3q58qVF_DRWuTprpA5w1_lAa9dAiI6hJnnEoGgF0P0cnH65T3Dts_mLwzLZp5npA37l1cTc_Af3I5eKXNRt1ysRZa8TPytJT_rZUgpqMw1GoCbH3uPkLlxtzqqwYKPhfcyQk5ph3Ces9DOV0xlQDGEcDTxkGPTygB4-7trrJtnEnX84zly0xo1w2atY-7HoyIP09xjBsG5f6oc9yjRGr1mA9-ExejkuIwWMSFyIw"); filter: grayscale(100%) brightness(80%); box-shadow: 5px 0 15px rgba(0,0,0,0.5);'>
+<div class="absolute top-4 left-4 bg-black/70 text-white text-xs font-bold px-3 py-1 rounded-sm backdrop-blur-sm">PRZED</div>
+</div>
+<div class="absolute top-0 bottom-0 left-1/2 w-0.5 bg-primary shadow-[0_0_10px_rgba(212,165,116,0.8)] z-10 flex items-center justify-center">
+<div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+<span class="material-symbols-outlined text-midnight text-sm">swap_horiz</span>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-serif text-white">Sosnowa Deska</h3>
+<p class="mt-2 text-sm font-light text-gray-400">Dom pod Kielcami. Szlifowanie, bielenie i olejowanie.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-midnight" id="opinie">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col items-center text-center mb-16">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">format_quote</span>
+<h2 class="text-4xl font-serif text-white">Głos naszych klientów</h2>
+<div class="mt-4 flex items-center gap-1">
+<div class="flex text-primary">
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined fill-1" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="ml-3 text-white font-medium">4.9/5 (50+ opinii)</span>
+</div>
+</div>
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<div class="relative rounded-sm bg-midnight-light p-8 border border-white/5 hover:border-primary/30 transition-colors">
+<div class="absolute -top-3 -right-3">
+<span class="material-symbols-outlined text-6xl text-white/5">format_quote</span>
+</div>
+<p class="mb-6 text-sm font-light leading-relaxed text-gray-300 italic">
+                            "Pan Piotr to prawdziwy wirtuoz. Podłoga z lat 70-tych wygląda jak nowa. Co najważniejsze - zero pyłu w mieszkaniu. Usługa warta każdej złotówki."
+                        </p>
+<div class="flex items-center gap-4 border-t border-white/5 pt-4">
+<div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-serif font-bold border border-primary/30">MK</div>
+<div>
+<p class="text-sm font-bold text-white">Marek Kowalski</p>
+<p class="text-xs text-gray-500">Kielce, Centrum</p>
+</div>
+</div>
+</div>
+<div class="relative rounded-sm bg-midnight-light p-8 border border-white/5 hover:border-primary/30 transition-colors">
+<div class="absolute -top-3 -right-3">
+<span class="material-symbols-outlined text-6xl text-white/5">format_quote</span>
+</div>
+<p class="mb-6 text-sm font-light leading-relaxed text-gray-300 italic">
+                            "Terminowość i kultura pracy na niespotykanym dziś poziomie. Parkiet po zalaniu wygląda lepiej niż przed szkodą. Pełen profesjonalizm."
+                        </p>
+<div class="flex items-center gap-4 border-t border-white/5 pt-4">
+<div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-serif font-bold border border-primary/30">AN</div>
+<div>
+<p class="text-sm font-bold text-white">Anna Nowak</p>
+<p class="text-xs text-gray-500">Masłów</p>
+</div>
+</div>
+</div>
+<div class="relative rounded-sm bg-midnight-light p-8 border border-white/5 hover:border-primary/30 transition-colors">
+<div class="absolute -top-3 -right-3">
+<span class="material-symbols-outlined text-6xl text-white/5">format_quote</span>
+</div>
+<p class="mb-6 text-sm font-light leading-relaxed text-gray-300 italic">
+                            "Szukałem kogoś kto podejmie się renowacji zabytkowego parkietu we dworze. Pan Piotr sprostał zadaniu celująco. Polecam z czystym sumieniem."
+                        </p>
+<div class="flex items-center gap-4 border-t border-white/5 pt-4">
+<div class="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-serif font-bold border border-primary/30">TJ</div>
+<div>
+<p class="text-sm font-bold text-white">Tomasz J.</p>
+<p class="text-xs text-gray-500">Kielce, Barwinek</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-midnight-dark py-20 border-t border-white/5">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<h2 class="mb-12 text-center text-3xl font-serif text-white">Częste pytania</h2>
+<div class="space-y-4">
+<details class="group rounded-sm border border-white/5 bg-midnight p-1 open:bg-midnight-light transition-all">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 text-white hover:text-primary transition-colors">
+<h3 class="font-medium">Czy cyklinowanie jest w 100% bezpyłowe?</h3>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-2">
+<p class="leading-relaxed text-gray-400 font-light text-sm border-l border-primary pl-4">
+                                Nasz sprzęt Bona wychwytuje 99.8% pyłu. Jest to standard "szpitalny". Pozostała ilość jest niemal niewidoczna gołym okiem i łatwa do usunięcia podczas standardowego odkurzania. Nie ma potrzeby zabezpieczania całego domu folią.
+                            </p>
+</div>
+</details>
+<details class="group rounded-sm border border-white/5 bg-midnight p-1 open:bg-midnight-light transition-all">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 text-white hover:text-primary transition-colors">
+<h3 class="font-medium">Jaki jest czas realizacji usługi?</h3>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-2">
+<p class="leading-relaxed text-gray-400 font-light text-sm border-l border-primary pl-4">
+                                Standardowy salon (20-30m²) to 2 dni pracy. Większe powierzchnie (całe mieszkania) zajmują od 3 do 5 dni. Czas ten obejmuje wszystkie etapy technologiczne, w tym czas schnięcia lakierów.
+                            </p>
+</div>
+</details>
+<details class="group rounded-sm border border-white/5 bg-midnight p-1 open:bg-midnight-light transition-all">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-4 text-white hover:text-primary transition-colors">
+<h3 class="font-medium">Czy stosują Państwo lakiery bezpieczne dla dzieci?</h3>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:-rotate-180 text-primary">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-2">
+<p class="leading-relaxed text-gray-400 font-light text-sm border-l border-primary pl-4">
+                                Tak, pracujemy wyłącznie na certyfikowanej chemii (Bona, Loba). Są to nowoczesne lakiery wodne, bezzapachowe, hipoalergiczne i w pełni bezpieczne dla dzieci oraz zwierząt domowych zaraz po wyschnięciu.
+                            </p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<footer class="bg-midnight pt-20 pb-10 border-t border-white/10" id="kontakt">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid gap-16 lg:grid-cols-2">
+<div>
+<div class="flex items-center gap-3 mb-8">
+<div class="flex items-center justify-center rounded-full border border-primary bg-midnight p-2 text-primary">
+<span class="material-symbols-outlined" style="font-size: 24px;">carpenter</span>
+</div>
+<h2 class="text-3xl font-serif text-white">Pan <span class="text-primary">Piotr</span></h2>
+</div>
+<p class="mb-10 max-w-md text-gray-400 font-light leading-relaxed">
+                            Ekskluzywna renowacja podłóg. Łączymy rzemieślniczą precyzję z nowoczesną technologią. Skontaktuj się z nami, aby nadać swojemu wnętrzu nowy blask.
+                        </p>
+<div class="space-y-6">
+<a class="group flex items-center gap-6 text-xl text-white transition-colors hover:text-primary" href="tel:511692325">
+<div class="flex h-12 w-12 items-center justify-center rounded-sm bg-white/5 border border-white/10 group-hover:border-primary/50 group-hover:bg-primary/10 transition-all">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<span class="font-serif tracking-wide">511 692 325</span>
+</a>
+<a class="group flex items-center gap-6 text-xl text-white transition-colors hover:text-primary" href="mailto:kontakt@panpiotr.pl">
+<div class="flex h-12 w-12 items-center justify-center rounded-sm bg-white/5 border border-white/10 group-hover:border-primary/50 group-hover:bg-primary/10 transition-all">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<span class="font-serif tracking-wide text-base">kontakt@panpiotr.pl</span>
+</a>
+<div class="flex items-center gap-6 text-xl text-white">
+<div class="flex h-12 w-12 items-center justify-center rounded-sm bg-white/5 border border-white/10">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<span class="font-serif tracking-wide text-base">Kielce i okolice (woj. Świętokrzyskie)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<div class="h-80 w-full overflow-hidden rounded-sm border border-white/10 bg-midnight-dark relative group">
+<div class="absolute inset-0 bg-primary/10 z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-500"></div>
+<div class="h-full w-full bg-cover bg-center opacity-70 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0" data-alt="Map showing Kielce city area" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCT42iLfU20l5MToYMTLPjB6w0rWxDnyozwOdi62EZRji3-ggpXscqaYrgtEnRXSWLNusAuPNQLvH_xYz0ABNk7VQiTjGGtYUQgtCuVkZXKA6xfsLg33yZqhmEong22LoPlVcnToNbNCYX_ObsEXsEN0jr7cD7NhDx14AQo72Rkn9XYKBZCrGPaXXoX_Kq9Q4F8RPGFHstV0lU4C4xlF863C5qN7tpWM1JYQF-b97PAyJ72mcbKDE1wNKDUS0Dqc8L5t5KhGt5bRQ");'>
+</div>
+<div class="absolute bottom-4 left-4 z-20 bg-midnight/90 border border-primary/30 px-4 py-2 rounded-sm backdrop-blur-md">
+<p class="text-primary text-xs font-bold uppercase tracking-widest">Obszar działania</p>
+<p class="text-white text-sm">Kielce + 50km</p>
+</div>
+</div>
+<div class="flex gap-4 justify-end">
+<a class="flex h-10 w-10 items-center justify-center rounded-sm border border-white/10 bg-white/5 text-gray-400 transition-all hover:bg-primary hover:text-midnight hover:border-primary" href="#">
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="flex h-10 w-10 items-center justify-center rounded-sm border border-white/10 bg-white/5 text-gray-400 transition-all hover:bg-primary hover:text-midnight hover:border-primary" href="#">
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.48 2h-.165zm-5.231 1.418c-1.003.045-1.546.21-1.913.353-.478.188-.82.413-1.135.728-.315.315-.54.657-.728 1.134-.143.367-.308.91-.353 1.912-.045 1.04-.059 1.353-.059 3.867v.465c0 2.514.014 2.827.059 3.867.045 1.002.21 1.545.353 1.913.188.478.413.82.728 1.135.315.315.657.54 1.134.728.367.143.91.308 1.912.353 1.04.045 1.353.059 3.867.059h.465c2.514 0 2.827-.014 3.867-.059 1.002-.045 1.545-.21 1.913-.353.478-.188.82-.413 1.135-.728.315-.315.54-.657.728-1.134.143-.367.308-.91.353-1.912.045-1.04.059-1.353.059-3.867v-.465c0-2.514-.014-2.827-.059-3.867-.045-1.002-.21-1.545-.353-1.913-.188-.478-.413-.82-.728-1.135-.315-.315-.657-.54-1.134-.728-.367-.143-.91-.308-1.912-.353-1.04-.045-1.353-.059-3.867-.059h-.465c-2.514 0-2.827.014-3.867.059zM12 5.838a6.162 6.162 0 110 12.324 6.162 6.162 0 010-12.324zm0 1.622a4.54 4.54 0 100 9.08 4.54 4.54 0 000-9.08zm8.682-3.692a1.08 1.08 0 110 2.16 1.08 1.08 0 010-2.16z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-16 border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-light">
+<p>© 2024 Pan Piotr Cyklinowanie Premium. Wszelkie prawa zastrzeżone.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Polityka Prywatności</a>
+<a class="hover:text-primary transition-colors" href="#">Regulamin</a>
+</div>
+</div>
+</div>
+</footer>
+<a class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-midnight shadow-[0_0_20px_rgba(212,165,116,0.4)] transition-transform hover:scale-110 active:scale-95 animate-pulse hover:animate-none" href="tel:511692325" title="Zadzwoń teraz">
+<span class="material-symbols-outlined text-3xl">phone_in_talk</span>
+</a>
+</div>
+
+</body></html>

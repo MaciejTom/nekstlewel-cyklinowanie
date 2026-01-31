@@ -1,3 +1,5 @@
+import { IconArrowForward } from "@/components/icons";
+
 export function ServicesContent() {
   const services = [
     {
@@ -54,27 +56,31 @@ export function ServicesContent() {
 
         {/* Services list */}
         <div className="flex flex-col border-t border-white/10">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <div
               key={service.num}
-              className="group py-8 md:py-12 border-b border-white/10 cursor-pointer transition-all duration-500 hover:bg-white/5"
+              className="group py-8 md:py-12 border-b border-white/10 lg:cursor-pointer transition-all duration-500 lg:hover:bg-white/5"
             >
               <div className="flex flex-col md:flex-row items-baseline md:items-start gap-6 md:gap-12 px-4">
-                <span className="font-serif text-5xl md:text-6xl text-wood opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+                <span className={`font-serif text-5xl md:text-6xl text-wood transition-opacity duration-300 ${
+                  index === 0 ? "opacity-100" : "opacity-60 group-hover:opacity-100"
+                }`}>
                   {service.num}
                 </span>
                 <div className="flex-1 w-full">
                   <div className="flex justify-between items-center w-full">
-                    <h3 className="font-serif text-3xl md:text-5xl group-hover:translate-x-2 transition-transform duration-500 ease-out">
+                    <h3 className="font-serif text-3xl md:text-5xl lg:group-hover:translate-x-2 transition-transform duration-500 ease-out">
                       {service.title}
                     </h3>
-                    <span className="material-symbols-outlined text-4xl text-wood opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 hidden md:block">
-                      arrow_forward
-                    </span>
+                    <IconArrowForward className="w-10 h-10 text-wood opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 hidden lg:block" />
                   </div>
-                  <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-all duration-500 ease-in-out">
+                  <div className={`grid transition-all duration-500 ease-in-out ${
+                    index === 0
+                      ? "grid-rows-[1fr]"
+                      : "grid-rows-[1fr] lg:grid-rows-[0fr] lg:group-hover:grid-rows-[1fr]"
+                  }`}>
                     <div className="overflow-hidden">
-                      <p className="pt-6 text-gray-300 font-light max-w-xl text-lg leading-relaxed group-hover:translate-x-2 transition-transform duration-500 delay-75">
+                      <p className="pt-6 text-gray-300 font-light max-w-xl text-lg leading-relaxed lg:group-hover:translate-x-2 transition-transform duration-500 delay-75">
                         {service.desc}
                       </p>
                     </div>

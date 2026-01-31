@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "evaluator": "RALPH",
+    "version": "2.0",
+    "date": "2026-01-21",
+    "content_file": "4-content.md",
+    "guidelines_used": ["master-prompt.md", "seo-guidelines.md", "marketing-guidelines.md"]
+  },
+
+  "section_evaluations": [
+    {
+      "section": "HERO",
+      "scores": {
+        "brand_voice": 5,
+        "eeat": 5,
+        "quality": 5,
+        "marketing_compliance": 5,
+        "cohesion": 5
+      },
+      "weighted_score": 29.5,
+      "percentage": 90.8,
+      "pass": true,
+      "notes": "Silne UVP (bezpyłowe + 4.9/50), konkretne CTA z numerem, social proof bar. H1 krótki i chwytliwy."
+    },
+    {
+      "section": "DLACZEGO MY",
+      "scores": {
+        "brand_voice": 5,
+        "eeat": 5,
+        "quality": 5,
+        "marketing_compliance": 5,
+        "cohesion": 5
+      },
+      "weighted_score": 29.5,
+      "percentage": 90.8,
+      "pass": true,
+      "notes": "4 USP z konkretem, cytaty z opinii jako dowód, osobisty ton. Naprawy po innych = silny wyróżnik."
+    },
+    {
+      "section": "USŁUGI",
+      "scores": {
+        "brand_voice": 5,
+        "eeat": 4,
+        "quality": 5,
+        "marketing_compliance": 4,
+        "cohesion": 5
+      },
+      "weighted_score": 26.5,
+      "percentage": 81.5,
+      "pass": true,
+      "notes": "5 usług opisanych konkretnie. Brak liczb przy usługach (np. ile warstw lakieru standardowo) - minor."
+    },
+    {
+      "section": "JAK PRACUJĘ",
+      "scores": {
+        "brand_voice": 5,
+        "eeat": 4,
+        "quality": 5,
+        "marketing_compliance": 5,
+        "cohesion": 5
+      },
+      "weighted_score": 27.5,
+      "percentage": 84.6,
+      "pass": true,
+      "notes": "4 kroki procesu, konkretne. Odpowiada na 'co się stanie po kontakcie'. Osobisty ton (ja, nie firma)."
+    },
+    {
+      "section": "REALIZACJE",
+      "scores": {
+        "brand_voice": 5,
+        "eeat": 5,
+        "quality": 5,
+        "marketing_compliance": 5,
+        "cohesion": 5
+      },
+      "weighted_score": 29.5,
+      "percentage": 90.8,
+      "pass": true,
+      "notes": "4 realizacje z opisem i cytatami z opinii. Format case study (typ + zakres + efekt). Cytaty = dowód społeczny."
+    },
+    {
+      "section": "OPINIE",
+      "scores": {
+        "brand_voice": 5,
+        "eeat": 5,
+        "quality": 5,
+        "marketing_compliance": 5,
+        "cohesion": 5
+      },
+      "weighted_score": 29.5,
+      "percentage": 90.8,
+      "pass": true,
+      "notes": "5 opinii z pełnymi nazwiskami, różnorodni autorzy (lokalni przewodnicy + zwykli). Link do Google."
+    },
+    {
+      "section": "FAQ",
+      "scores": {
+        "brand_voice": 5,
+        "eeat": 5,
+        "quality": 5,
+        "marketing_compliance": 4,
+        "cohesion": 5
+      },
+      "weighted_score": 27.5,
+      "percentage": 84.6,
+      "pass": true,
+      "notes": "6 pytań adresujących realne obiekcje (bezpyłowość, czas, koszt, stare parkiety). Brak konkretnych cen - świadomie (wycena indywidualna)."
+    },
+    {
+      "section": "KONTAKT",
+      "scores": {
+        "brand_voice": 5,
+        "eeat": 4,
+        "quality": 5,
+        "marketing_compliance": 5,
+        "cohesion": 5
+      },
+      "weighted_score": 27.5,
+      "percentage": 84.6,
+      "pass": true,
+      "notes": "Telefon jako główne CTA, adres, zasięg. Brak maila/formularza - ale dla tego typu usługi telefon jest główny."
+    }
+  ],
+
+  "summary": {
+    "total_sections": 8,
+    "sections_passing": 8,
+    "average_percentage": 87.3,
+    "decision": "APPROVE",
+    "reasoning": "Wszystkie 8 sekcji przeszły (≥70%). Średnia 87.3%. Content zgodny z brand voice, silne UVP, konkretne liczby, osobisty ton. Brak marketing slop, brak pustych obietnic."
+  },
+
+  "strengths": [
+    "Silne UVP: bezpyłowe + 4.9/50 opinii",
+    "Osobisty ton: Pan Piotr, nie 'firma'",
+    "Cytaty z opinii jako dowód w realizacjach",
+    "Konkretne CTA z numerem telefonu",
+    "Specjalizacja w starych parkietach (20-50 lat) jako wyróżnik",
+    "Naprawy po innych firmach - unikalne"
+  ],
+
+  "minor_improvements": [
+    {
+      "section": "USŁUGI",
+      "issue": "Brak konkretnych liczb przy usługach",
+      "suggestion": "Dodać np. '2-3 warstwy lakieru', 'schnięcie 24h między warstwami'"
+    },
+    {
+      "section": "KONTAKT",
+      "issue": "Brak alternatywnej formy kontaktu",
+      "suggestion": "Dodać WhatsApp lub SMS jako opcję dla osób nie lubiących dzwonić"
+    }
+  ],
+
+  "marketing_slop_check": {
+    "found": false,
+    "violations": []
+  },
+
+  "final_verdict": {
+    "status": "APPROVE",
+    "ready_for_implementation": true,
+    "iteration_needed": false
+  }
+}

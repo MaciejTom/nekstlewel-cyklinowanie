@@ -1,3 +1,5 @@
+import { IconFormatQuote, IconArrowOutward } from "@/components/icons";
+
 export function TestimonialsContent() {
   const testimonials = [
     {
@@ -37,7 +39,7 @@ export function TestimonialsContent() {
       <div className="mx-auto max-w-[1600px]">
         {/* Header */}
         <div className="mb-20 text-center">
-          <span className="material-symbols-outlined text-6xl text-wood mb-6">format_quote</span>
+          <IconFormatQuote className="w-16 h-16 text-wood mb-6" />
           <h2 className="font-serif text-5xl lg:text-6xl mb-4">Co mówią klienci</h2>
           <p className="text-gray-600 text-lg">
             50 opinii na Google, średnia <span className="text-wood font-bold">4.9★</span>
@@ -87,7 +89,7 @@ export function TestimonialsContent() {
             className="inline-flex items-center gap-2 text-charcoal font-bold text-sm uppercase tracking-wider hover:text-wood transition-colors"
           >
             <span>Zobacz wszystkie 50 opinii na Google</span>
-            <span className="material-symbols-outlined">arrow_outward</span>
+            <IconArrowOutward className="w-5 h-5" />
           </a>
         </div>
       </div>

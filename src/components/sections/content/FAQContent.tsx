@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { IconAdd, IconPhone } from "@/components/icons";
 
 export function FAQContent() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -51,13 +52,11 @@ export function FAQContent() {
                 <h3 className="font-serif text-xl lg:text-2xl group-hover:text-wood transition-colors">
                   {faq.q}
                 </h3>
-                <span
-                  className={`material-symbols-outlined text-2xl text-wood shrink-0 transition-transform duration-300 ${
+                <IconAdd
+                  className={`w-6 h-6 text-wood shrink-0 transition-transform duration-300 ${
                     openIndex === index ? "rotate-45" : ""
                   }`}
-                >
-                  add
-                </span>
+                />
               </button>
               <div
                 className={`grid transition-all duration-300 ease-in-out ${
@@ -82,7 +81,7 @@ export function FAQContent() {
             className="inline-flex items-center gap-3 bg-charcoal text-white px-8 py-4 font-bold text-sm uppercase tracking-wider hover:bg-wood transition-colors"
           >
             <span>Zadzwoń: 511 692 325</span>
-            <span className="material-symbols-outlined">phone</span>
+            <IconPhone className="w-5 h-5" />
           </a>
         </div>
       </div>

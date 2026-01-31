@@ -38,16 +38,6 @@ export default function RootLayout({
     <html lang="pl" className={`${manrope.variable} ${playfair.variable}`}>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        {/* Material Symbols loaded async - not render blocking */}
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0&display=swap"
-          as="style"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body className="font-sans antialiased">
         {children}

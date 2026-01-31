@@ -1,3 +1,5 @@
+import { IconSchedule, IconLocationOn, IconMap } from "@/components/icons";
+
 export function FooterContent() {
   return (
     <footer className="bg-charcoal text-white pt-24 pb-12 px-6 lg:px-12" id="kontakt">
@@ -22,15 +24,15 @@ export function FooterContent() {
             {/* Details */}
             <div className="space-y-4 text-gray-400">
               <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-wood">schedule</span>
+                <IconSchedule className="w-6 h-6 text-wood" />
                 <span>Elastyczne godziny - zadzwoń, umówimy się</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-wood">location_on</span>
+                <IconLocationOn className="w-6 h-6 text-wood" />
                 <span>Kielce, ul. Turystyczna</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-wood">map</span>
+                <IconMap className="w-6 h-6 text-wood" />
                 <span>Zasięg: Kielce i okolice</span>
               </div>
             </div>

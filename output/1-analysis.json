@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "generated_at": "2026-01-21",
+    "agent": "analyzer",
+    "version": "2.0",
+    "source": "raw.md + Google Maps"
+  },
+
+  "inventory": {
+    "basic_data": {
+      "name": "Cyklinowanie bezpyłowe",
+      "owner": "Pan Piotr",
+      "location": "Kielce, ul. Turystyczna",
+      "region": "świętokrzyskie",
+      "phone": "511 692 325",
+      "type": "usługi parkieciarskie / cyklinowanie",
+      "hours": "elastyczne (czynne całą dobę w Google)"
+    },
+    "review_stats": {
+      "platform": "Google Maps",
+      "rating": 4.9,
+      "total_reviews": 50,
+      "distribution": {
+        "5_star": "~46",
+        "4_star": "~3",
+        "1_star": "1"
+      }
+    },
+    "photos": {
+      "count": 2,
+      "types": ["realizacja - parkiet jodełka wysoki połysk", "realizacja - podłoga dębowa dom nowoczesny"],
+      "quality": "wysokie, pokazują efekt końcowy"
+    }
+  },
+
+  "usp": [
+    {
+      "id": "dustless",
+      "statement": "Cyklinowanie BEZPYŁOWE - bez kurzu w domu",
+      "evidence": "Nazwa firmy, wielokrotnie powtarzane w opiniach: 'bez kurzu', 'czysto'",
+      "strength": "critical",
+      "differentiator": true
+    },
+    {
+      "id": "old_floors",
+      "statement": "Przywraca stare parkiety (20-50 lat) do stanu 'jak nowy'",
+      "evidence": "Opinie: '50-letnia podłoga jak nowa', 'parkiet po 25 latach wygląda jak nowy', 'po 20 latach użytkowania'",
+      "strength": "high",
+      "differentiator": true
+    },
+    {
+      "id": "expert_knowledge",
+      "statement": "Pan Piotr - ekspert od drewna z ogromną wiedzą",
+      "evidence": "Wielokrotnie w opiniach: 'ogromna wiedza', 'zna się na drewnie', 'fachowe doradztwo', 'daje wskazówki'",
+      "strength": "high",
+      "differentiator": true
+    },
+    {
+      "id": "rescue_jobs",
+      "statement": "Naprawia po poprzednich firmach i awariach",
+      "evidence": "'uratował mi parkiet po poprzedniej firmie', 'naprawa podłogi po awarii'",
+      "strength": "medium",
+      "differentiator": true
+    },
+    {
+      "id": "rating",
+      "statement": "4.9 gwiazdek na 50 opinii",
+      "evidence": "Google Maps verified",
+      "strength": "high",
+      "differentiator": false
+    }
+  ],
+
+  "review_analysis": {
+    "sentiment": "bardzo pozytywny",
+    "key_phrases": [
+      "podłoga jak nowa",
+      "bezpyłowo",
+      "profesjonalnie",
+      "polecam",
+      "fachowiec",
+      "dokładnie",
+      "terminowo",
+      "wiedza o drewnie"
+    ],
+    "negative_feedback": [
+      {
+        "issue": "ubytki przy listwach",
+        "frequency": "1 opinia",
+        "severity": "isolated"
+      }
+    ],
+    "owner_mentioned_by_name": true,
+    "owner_name": "Pan Piotr",
+    "personal_recommendations": "bardzo częste - 'polecam Pana Piotra'"
+  },
+
+  "services_extracted": [
+    {
+      "name": "Cyklinowanie bezpyłowe",
+      "description": "Szlifowanie parkietu bez kurzu",
+      "primary": true
+    },
+    {
+      "name": "Lakierowanie podłóg",
+      "description": "Wykończenie lakierem (mat/połysk)",
+      "primary": true
+    },
+    {
+      "name": "Renowacja starych parkietów",
+      "description": "Przywracanie podłóg 20-50 letnich",
+      "primary": true
+    },
+    {
+      "name": "Naprawa parkietu",
+      "description": "Wymiana klepek, uzupełnianie ubytków",
+      "primary": false
+    },
+    {
+      "name": "Szpachlowanie",
+      "description": "Wypełnianie szczelin i ubytków",
+      "primary": false
+    },
+    {
+      "name": "Montaż listew",
+      "description": "Listewkowanie po renowacji",
+      "primary": false
+    }
+  ],
+
+  "target_audience": {
+    "primary": {
+      "segment": "Właściciele mieszkań/domów ze starymi parkietami",
+      "needs": ["odnowienie zniszczonej podłogi", "brak kurzu podczas prac", "fachowe doradztwo"],
+      "decision_factors": ["czystość prac", "efekt końcowy", "opinie"]
+    },
+    "secondary": {
+      "segment": "Osoby po nieudanych renowacjach",
+      "needs": ["naprawa błędów poprzedniej firmy", "profesjonalne wykonanie"],
+      "decision_factors": ["doświadczenie wykonawcy", "gwarancja efektu"]
+    }
+  },
+
+  "tone_recommendation": {
+    "style": "osobisty_ekspercki",
+    "voice": "Pan Piotr mówi do klienta",
+    "formality": "nieformalny ale profesjonalny",
+    "key_attributes": ["ekspert", "bezpyłowo", "stare parkiety", "Kielce"]
+  },
+
+  "design_recommendation": {
+    "direction": "WARM",
+    "reasoning": "B2C usługi domowe, osobisty kontakt z właścicielem, ciepłe kolory drewna",
+    "color_hints": ["odcienie drewna", "ciepły brąz", "kremowe tła"],
+    "imagery": "zdjęcia efektów - połyskujące parkiety, przed/po"
+  },
+
+  "content_priorities": {
+    "hero": {
+      "focus": "Bezpyłowe cyklinowanie + rating 4.9",
+      "cta": "telefon bezpośredni"
+    },
+    "trust_signals": [
+      "4.9/5 na 50 opinii",
+      "Pan Piotr - ekspert z doświadczeniem",
+      "Parkiety 20-50 letnie jak nowe"
+    ],
+    "proof_points": [
+      "Cytaty z opinii o 'bezpyłowo'",
+      "Zdjęcia przed/po (jeśli dostępne)",
+      "Konkretne przykłady: '50-letni parkiet'"
+    ]
+  },
+
+  "seo_keywords": {
+    "primary": ["cyklinowanie Kielce", "cyklinowanie bezpyłowe Kielce"],
+    "secondary": ["renowacja parkietu Kielce", "lakierowanie podłóg Kielce"],
+    "long_tail": ["cyklinowanie bez kurzu Kielce", "odnowienie starego parkietu Kielce"]
+  },
+
+  "warnings": [
+    {
+      "type": "negative_review",
+      "note": "1 negatywna opinia o ubytkach przy listwach - nie eksponować listew jako usługi głównej"
+    }
+  ]
+}
