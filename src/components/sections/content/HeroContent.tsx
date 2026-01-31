@@ -1,15 +1,18 @@
+import Image from "next/image";
+
 export function HeroContent() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            'url("https://lh3.googleusercontent.com/aida-public/AB6AXuA94GyGi2mqej2PNsu-5SYNBbEybAsT40qfv2rOEUdajN7W_wZkJAfbUiLZIvBBmO4C0OYFQKcaqWw-Zhkcp1ey8cZq2bBzOpJTqZYEe_xeuAvE6__azTz4dZzs3xWvWW5Th4IUIHhwNl1ygR9i0Lv9rqEeQ5s9UygsrF2-W83H_Oero6-jqIp4m8P59-FUqyfvgLXgbiAJuFdbhHdZ-HwyXu49TdaSwpmXjdgUaKk-kzvzgmiPRxs4GyF6wlOue_XEwCdiEozsNpU")',
-        }}
-      >
-        <div className="absolute inset-0 bg-black/30" />
-      </div>
+      <Image
+        src="/images/hero.webp"
+        alt="Podłoga drewniana po renowacji"
+        fill
+        priority
+        quality={95}
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-black/30" />
 
       <div className="absolute bottom-0 left-0 h-full w-full max-w-[1600px] mx-auto px-6 lg:px-12 pointer-events-none flex flex-col justify-end pb-12 lg:pb-24">
         <div className="max-w-4xl pointer-events-auto">

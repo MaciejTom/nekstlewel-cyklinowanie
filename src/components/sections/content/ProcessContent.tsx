@@ -41,9 +41,11 @@ export function ProcessContent() {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] w-full overflow-hidden bg-gray-200 sticky top-24">
               <Image
-                src="/images/maszyna.jpg"
+                src="/images/maszyna.webp"
                 alt="Profesjonalna maszyna do cyklinowania bezpyłowego"
                 fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                loading="lazy"
                 className="object-cover"
               />
             </div>

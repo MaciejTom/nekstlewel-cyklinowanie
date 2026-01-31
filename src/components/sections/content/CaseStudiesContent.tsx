@@ -3,7 +3,7 @@ import Image from "next/image";
 export function CaseStudiesContent() {
   const projects = [
     {
-      image: "/images/1.jpg",
+      image: "/images/1.webp",
       location: "Kielce",
       type: "Parkiet jodełkowy",
       title: "Lustrzane odbicia, widoczny rysunek drewna.",
@@ -11,7 +11,7 @@ export function CaseStudiesContent() {
       reverse: false,
     },
     {
-      image: "/images/4.jpg",
+      image: "/images/4.webp",
       location: "Dom pod Kielcami",
       type: "Podłoga dębowa",
       title: "Naturalna barwa dębu w nowoczesnym wnętrzu.",
@@ -19,7 +19,7 @@ export function CaseStudiesContent() {
       reverse: true,
     },
     {
-      image: "/images/5.jpg",
+      image: "/images/5.webp",
       location: "Kielce, Centrum",
       type: "Mozaika dębowa",
       title: "Parkiet po 25 latach jak nowy.",
@@ -27,7 +27,7 @@ export function CaseStudiesContent() {
       reverse: false,
     },
     {
-      image: "/images/7.jpg",
+      image: "/images/7.webp",
       location: "Kielce",
       type: "Parkiet 50-letni",
       title: "50-letnia podłoga odmłodniała o 50 lat.",
@@ -59,6 +59,8 @@ export function CaseStudiesContent() {
                     src={project.image}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    loading="lazy"
                     className="object-cover transition-transform hover:scale-105 duration-[1.5s]"
                   />
                 </div>

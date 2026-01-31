@@ -1,27 +1,49 @@
-import { Wind, History, Sparkles, Hammer } from "lucide-react";
+const WindIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/>
+  </svg>
+);
+
+const HistoryIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/>
+  </svg>
+);
+
+const SparklesIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/>
+  </svg>
+);
+
+const HammerIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="m15 12-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L12 9"/><path d="M17.64 15 22 10.64"/><path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/>
+  </svg>
+);
 
 const features = [
   {
     num: "01",
-    icon: Wind,
+    icon: WindIcon,
     title: "Bezpyłowo naprawdę",
     desc: "Maszyny z systemem odciągu pyłu. Pracuję w mieszkaniu z meblami - kurz nie leci po całym domu. Sprawdź opinie - \"bez kurzu\" pojawia się w co drugiej.",
   },
   {
     num: "02",
-    icon: History,
+    icon: HistoryIcon,
     title: "Stare parkiety to moja specjalność",
     desc: "20, 30, 50 lat - widziałem już wszystko. Parkiet po pół wieku użytkowania może wyglądać jak nowy. Mam na to dowody w opiniach: \"50-letnia podłoga odmłodniała o 50 lat\".",
   },
   {
     num: "03",
-    icon: Sparkles,
+    icon: SparklesIcon,
     title: "Wiem co robię z drewnem",
     desc: "Znam gatunki drewna, wiem które lakiery do czego. Po renowacji dostajesz wskazówki jak dbać o parkiet, żeby wyglądał dobrze przez lata.",
   },
   {
     num: "04",
-    icon: Hammer,
+    icon: HammerIcon,
     title: "Naprawiam po innych firmach",
     desc: "Źle zrobione cyklinowanie? Uszkodzenia przy listwach? Nierówności? Naprawiam błędy poprzednich wykonawców. Kilku klientów trafiło do mnie właśnie po nieudanych renowacjach.",
   },
